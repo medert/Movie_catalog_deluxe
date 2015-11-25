@@ -1,0 +1,9 @@
+<h1>This is an actors info (movies, roles)</h1>
+<h2><%=@actors_movies_characters[0]["name"]%></h2>
+<%@movies_w_id.each do |movie| %>
+
+<li>
+  <a href="/movies/<%=movie["id"]%>"><%=movie["title"]%></a>
+  <%=movie["character"]%>
+</li>
+<%end%>

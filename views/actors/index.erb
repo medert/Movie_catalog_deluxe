@@ -1,0 +1,9 @@
+<h1>This is a list of actors!</h1>
+
+<%@actors.each do |actor| %>
+
+<li>
+  <a href="/actors/<%=actor["id"]%>"><%=actor["name"]%></a>
+
+</li>
+<%end%>

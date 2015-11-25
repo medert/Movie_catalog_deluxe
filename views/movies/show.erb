@@ -1,0 +1,14 @@
+<h1>This is a list of Movies!</h1>
+<h2><%=@movies[0]["title"]%></h2>
+<h3><%=@movies[0]["year"]%></h3>
+<h4><%=@movies[0]["rating"]%></h4>
+<h5><%=@movies[0]["movie_genre"]%></h5>
+<h6><%=@movies[0]["movie_studio"]%></h6>
+
+<%@movies.each do |movie| %>
+
+<li>
+  <a href="/actors/<%=movie["actor_id"]%>"><%=movie["actor_name"]%></a>
+  <%=movie["character"]%>
+</li>
+<%end%>
